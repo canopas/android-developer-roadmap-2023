@@ -3,9 +3,10 @@
 ![alt text](https://github.com/cp-radhika-s/Android-Roadmap/blob/main/image/og_image.png)
 
 
-The Android Developer Roadmap 2023 includes **28 practical exercises** that cover all the essential concepts used in day-to-day development. Before starting any practical, it's important to conduct research and learn the necessary concepts.
-
+The Android Developer Roadmap 2023 includes **28 practical exercises** that cover all the essential concepts used in day-to-day development.
 # Guidelines 
+Before starting any practical, it's important to conduct research and learn the necessary concepts.
+
 As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
 
 To keep track of your progress and share your work with your team lead, create a repository on GitLab where you can upload your completed exercises for review.
