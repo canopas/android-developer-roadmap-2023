@@ -226,6 +226,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * When a country is selected, the application should display a list of universities located in that country.
 * Use Hilt for dependency injection 
 * GET Request API - http://universities.hipolabs.com/search?country={country name}
+* Write Unit test for viewmodel
 
 ### Practicle 24
 #### Implement offline-first StoreMate product application
@@ -236,6 +237,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * The product data should be first fetched from the local database and then sync with remote API data.
 * Add swipe-to-delete functionality to remove products from local storage
 * Add swipe-to-refresh functionality to refresh the local database with remote data
+* Write Unit test for viewmodel
 
 # Kotlin Coroutine & Flow
 
@@ -244,6 +246,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * The user should be able to set the duration of the timer and start it. 
 * The timer should decrement every second, and the app should display the remaining time on the screen. 
 * When the timer reaches zero, the app should display a notification to indicate that the time is up.
+* Write Unit test for viewmodel
 
 ### Practicle 26
 #### Implement a VocabVault app
@@ -251,6 +254,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Users should be able to search for a word by typing it into a search bar, and the app should display the word's definition along with pronunciations, parts of speech, examples, synonyms.
 * Use Kotlin coroutine
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+* Write Unit test for viewmodel
 
 ### Practicle 27
 #### Create Contact Keeper application.
@@ -258,6 +262,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * The app should allow users to add, update, and delete contacts.
 * The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
 * Use Kotlin  flow to get a real-time update
+* Write Unit test for viewmodel
 
 # Broadcast receiver & task scheduling
 
