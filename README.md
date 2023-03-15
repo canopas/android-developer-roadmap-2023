@@ -265,7 +265,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Android Service
 
-### Practicle 18
+### Practicle 28
 #### Create Music player application
 *  Allow users to play multiple songs. 
 * Use an Android Service to play music in the background and show a notification of the current music being played.
