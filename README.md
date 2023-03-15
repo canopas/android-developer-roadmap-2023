@@ -5,15 +5,15 @@
 
 The Android Developer Roadmap 2023 includes **29 practical exercises** that cover all the essential concepts used in day-to-day development.
 # Guidelines 
-Before starting any practical, it's important to conduct research and learn the necessary concepts.
+- Before starting any practical, it's important to conduct research and learn the necessary concepts.
 
-As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
+- As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
 
-To keep track of your progress and share your work with your team lead, create a repository on GitLab where you can upload your completed exercises for review.
+- To keep track of your progress and share your work with your team lead, create a repository on GitLab where you can upload your completed exercises for review.
 
-To stay organized and track your progress, create tickets on ClickUp for each practical exercise. Each ticket should include a detailed description of the exercise, as well as an estimate of story points.
+- To stay organized and track your progress, create tickets on ClickUp for each practical exercise. Each ticket should include a detailed description of the exercise, as well as an estimate of story points.
 
-As you work on each practical exercise, move the corresponding ticket from the "To-Do" queue to the "Done" queue to keep track of your progress. This will help you stay focused and motivated as you work through the roadmap.
+- As you work on each practical exercise, move the corresponding ticket from the "To-Do" queue to the "Done" queue to keep track of your progress. This will help you stay focused and motivated as you work through the roadmap.
 
 # Table of contents
 * [Android XML](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-xml)
@@ -34,26 +34,44 @@ As you work on each practical exercise, move the corresponding ticket from the "
 ### Practicle 1
 
 #### Develop an onboard and sign-in screen for Messaging application
-* App should responsive for different resolutions.
+* App will have 3 Activities - Onboard, signIn and Home activity
 * The onboard screen should provide a brief introduction to the app's features, such as messaging, voice and video calls, and file sharing.
+  - Show images, title and subtitle to introduce app functionality.
+  - Add button to check next/previous features. Also skip button to skip onboarding flow.
 * The sign-in screen should allow the user to enter their email and password, and validation should be added to ensure the user enters a valid email address and password.
 * After a successful login, the user should be redirected to the Home screen.
-* The user should not be able to go back to the login screen once redirected to the Home screen.
+  - On Home screen should show list of chat which sender detail,latest message and message time.
+  - The user should not be able to go back to the login screen once redirected to the Home screen.
+* App should responsive for different resolutions.
 * Add support for day/night theme.
+* You can use any images or placeholder to make UI eyecatchy
+* Add should follow material guildlines
 * Here's [UI for refrence](https://cdn.dribbble.com/userupload/3719280/file/original-5d6d206acf8adf5458091206369445f1.png?compress=1&resize=752x)
 
 ### Practicle 2
 #### Develop collapsing toolbar for News application
-* The toolbar should initially display the app's logo and title.
+* App will have one activity
+* The toolbar on screen should initially display the app's logo and title.
 * As the user scrolls down to read an article, the toolbar should collapse to provide more space for the article.
-* When the user reaches the end of the article and reverse scrolls, the toolbar should re-expand and display the app's title
+  - You can use any dummy text/images as article content.
+* When the user reaches the end of the article and reverse scrolls, the toolbar should re-expand and display the app's logo & title
+* You can use any images or placeholder to make UI eyecatchy
+* Add should follow material guildlines
 * Here's [UI for refrence](https://cdn.dribbble.com/users/663782/screenshots/3742414/media/67464fde751beb373b4c6fa962edf718.gif)
 
 ### Practicle 3
 #### Implement Survey application
-* App should ask user about shopping experience. 
-* Asks at least 3 questions with 4 options each. 
+* App will have one activity
+* On Home screen display survey form
+  - Survey form should show question, 4 options and button for next question.
+  - Show progress as user answer the question
 * Once the survey is completed, show a pop-up message thanking the user
+  - Use custom dialog to thanks user.
+  - Dialog will have UI to show thanks message, image and button to complete servey
+* Asks at least 3 questions with 4 options each. 
+* App should ask user about shopping experience. 
+* You can use any images or placeholder to make UI eyecatchy
+* Add should follow material guildlines
 * Here's [UI for refrence](https://cubicleninjas.com/wp-content/uploads/2021/01/NA-2021-Web-Questionnaire-3.jpg)
 
 # Android Activity
