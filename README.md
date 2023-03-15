@@ -3,7 +3,7 @@
 ![alt text](https://github.com/cp-radhika-s/Android-Roadmap/blob/main/image/og_image.png)
 
 
-The Android Developer Roadmap 2023 includes **28 practical exercises** that cover all the essential concepts used in day-to-day development.
+The Android Developer Roadmap 2023 includes **29 practical exercises** that cover all the essential concepts used in day-to-day development.
 # Guidelines 
 Before starting any practical, it's important to conduct research and learn the necessary concepts.
 
@@ -115,10 +115,15 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * The first activity should have an edit text and a send button, and when the user enters a message and clicks on the send button, the message should be sent to the second activity.
 * The second activity should have an edit text and a reply button, and when the user enters a reply message and clicks on the reply button, the replied message should be sent back to the first activity and displayed in a text view. 
 
+### Practicle 12
+#### Create Deep Links to App Content
+* Implement app that handle incoming link
+* On Click of this link https://open.my.app?message={anymessage} system should open our application and show the message from link
+* Use intent-filter to handle deep link
 
 # Android Jetpack Compose
 
-### Practicle 12
+### Practicle 13
 #### Develop an interactive onboard screen for Fitness application
 * App will provide a guided introduction to the app's features and functionality
 * The onboard screen should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
@@ -126,7 +131,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Add option to skip the onboarding process for users who are already familiar with the app's features.
 * Here's [UI for refrence](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
-### Practicle 13
+### Practicle 14
 
 #### Develop MathQuest quiz application
 * Ask 10 math questions for elementary school students
@@ -136,7 +141,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * The result screen should also provide a button to restart the quiz so that the user can play again.Implement day/night theme in Quiz app
 * Here's [UI for refrence](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
 
-### Practicle 14
+### Practicle 15
 #### Implement user profile UI
 * Display a user's profile picture, name, and bio. 
 * Use placeholder for profile image and dummy profile data.
@@ -144,7 +149,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Networking
 
-### Practicle 15
+### Practicle 16
 
 #### Develop ImageSaver application
 * Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage. 
@@ -153,7 +158,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Once the download is complete, the image should be displayed on the screen, and the downloaded image file should be stored in the device's internal storage
 * Use Retrofit for networking
 
-### Practicle 16
+### Practicle 17
 
 #### Implement OnlineUserDirectory
 * Retrieve and display a simple users list from web API  
@@ -167,7 +172,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # App Architecture
 
-### Practicle 17
+### Practicle 18
 
 #### Implement Drink Explorer
 * Allow users to search for their favourite mocktail detail. The application should have a search bar that allows users to search for mocktails by name. When the user taps on a mocktail, the application should display the ingredients and directions for making the mocktail. 
@@ -176,7 +181,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Save favourite mocktail detail in the database
 * Use MVVM app architecture
 
-### Practicle 18
+### Practicle 19
 #### Create My Journal application
 * Enable users to document their daily thoughts, feelings, experiences, and ideas. 
 * Add TextField to take user input
@@ -185,7 +190,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # DataStore
 
-### Practicle 19
+### Practicle 20
 #### Develop Authentify
 * An application that takes user credentials on the login screen and navigates to the home screen after a successful login.
 * Once the user logs in, the app should always show the home screen until the user logs out.
@@ -194,7 +199,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Local Storage
 
-### Practicle 20
+### Practicle 21
 #### Develop EmployeeHub application
 * The application should display a list of employees on the home screen, including their name and job title. 
 * When a user clicks on an employee from the list, the application should display their full details, such as their contact information, job responsibilities, and other important information. 
@@ -203,7 +208,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Finally, the user should be able to delete an employee from the directory by selecting them from the employee list and deleting their details.
 * Use Sqlite to store data locally
 
-### Practicle 21
+### Practicle 22
 #### Implement MinionSpeak application
 * Allow users to translate English text to the language of the minions and display the translated text on the screen.
 * The user should enter the English text in an edit text field and click on the translate button to initiate the translation. Once the translation is complete, the translated text should be displayed on the screen in the language of the minions.
@@ -214,7 +219,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Dependency Injection
 
-### Practicle 22
+### Practicle 23
 #### Implement University directory application
 * Allow users to browse and search universities from all around the world.
 * The application should have a dropdown menu that allows users to select a country.
@@ -222,7 +227,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 * Use Hilt for dependency injection 
 * GET Request API - http://universities.hipolabs.com/search?country={country name}
 
-### Practicle 23
+### Practicle 24
 #### Implement offline-first StoreMate product application
 * GET API - https://fakestoreapi.com/products
 * Retrieve the list of products from an API and displays it to the user. 
@@ -234,20 +239,20 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Kotlin Coroutine & Flow
 
-### Practicle 24
+### Practicle 25
 #### Implement count-down timer application using Kotlin coroutine. 
 * The user should be able to set the duration of the timer and start it. 
 * The timer should decrement every second, and the app should display the remaining time on the screen. 
 * When the timer reaches zero, the app should display a notification to indicate that the time is up.
 
-### Practicle 25
+### Practicle 26
 #### Implement a VocabVault app
 * Allow users to search for the definition of any word in the English language.
 * Users should be able to search for a word by typing it into a search bar, and the app should display the word's definition along with pronunciations, parts of speech, examples, synonyms.
 * Use Kotlin coroutine
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 
-### Practicle 26
+### Practicle 27
 #### Create Contact Keeper application.
 * Use Firestore to store contact details.
 * The app should allow users to add, update, and delete contacts.
@@ -256,7 +261,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Broadcast receiver & task scheduling
 
-### Practicle 27
+### Practicle 28
 #### Create Stand Up! application 
 * Remind users to stand up and walk around every fifteen minutes.
 * The application should display a notification when fifteen minutes have passed since the last reminder.
@@ -265,7 +270,7 @@ As you work on each practical exercise, move the corresponding ticket from the "
 
 # Android Service
 
-### Practicle 28
+### Practicle 29
 #### Create Music player application
 *  Allow users to play multiple songs. 
 * Use an Android Service to play music in the background and show a notification of the current music being played.
