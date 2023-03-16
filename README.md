@@ -77,20 +77,33 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 # Android Activity
 
 ### Practicle 4
-#### Implement LocalTune player 
-* An application can play a song from local resource. 
+#### Implement Video player 
+* This will be single Activity app
+  - App should have a view to show Video
+  - One button to play and pause vide
 * The player should follow the activity lifecycle, pausing when the activity goes to the background and resuming when the activity returns to the foreground. 
 * The player should also release resources when the activity is no longer alive.
+* An application can play a video from local resource. 
 * Use Exoplayer or MediaPlayer to play media
 
 ### Practicle 5
 #### Implement SnapCam
-* App should allows users to take pictures and save them to the device's gallery.
-* Show captured image preview to user
+* This will be Two Activity app - One to capture picture and another to show preview on image
+  - Which has PreviewView to show camera
+  - It should have button to capture image
+  - Also button to show captured image preview
+* On Preview Screen show image in fullscreen
+  - Use Glide or coin for image preview
+  - Add button to go back to camera screen
+* Save capture image to the device's gallery.
+* The camera resources should be release when the activity is no longer alive.
 
 ### Practicle 6
 #### Implement Note-taking application
-* Allow users to input text in an EditText. 
+* A single activity app
+  - Which allow user to enter a note 
+  - Use EditText to take input from user.
+  - Add button to reset the note
 * The application should have the ability to maintain the state of the EditText field, even when the device is rotated. 
 * This means that when the user rotates the device, the EditText field should retain its previous contents, and the user should be able to continue editing the note without losing any data.
 
@@ -98,71 +111,108 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 ### Practicle 7
 #### Develop Travel application
-*  App should have a bottom bar with 3 tabs: Destinations, Search, and Settings. 
+* Implement app using one activity only
+* Home screen should have bottom bar with 3 tabs: Destinations, Search, and Settings. 
 * The Destinations tab should display a list of popular travel destinations with images and descriptions. 
 * The Search tab should Aalows the user to search for destinations
-* The Settings tab should allow the user to customize app settings such as language and notification preferences.
+  - Add search view to search different destination
+  - Show message to notify user when searched destination is not available
+* The Settings tab should allow the user to customize app settings
+  -  Add toggle button for notification and day/night theme settings.
+* App should preserve the state on tab change
+  - If user scrolled to the bottom in destinations screen, it should preserve scroll state when tab change.
+  - If user searched something on search screen, searched result should be there when navigate to seach tab from other tabs..
+  - If user changed setting's toggle, it should be stay as it is when user navigate between the tabs
 * Use dummy data for destinations
 
 ### Practicle 8
 #### Develop RecipeLister application
-* Add RecyclerView to display the list of recipes.
-* Each list item should show the recipe name and a short description.
-* Tapping a recipe should open a new fragment with the full recipe text.
 * The app should use a single Activity to manage the fragments.
-* The up button should be used to navigate back to the list of recipes.
+* App should have two fragments - Home & detail fragments
+* On Home fragment add RecyclerView to display the list of recipes.
+  - Each list item should show the recipe name and a short description.
+  - Tapping a recipe should open Detail Fragment.
+* On Detail fragment show full recipe detail with recipe image and description
+  - Add back button to navigate back to the list of recipes.
+* Use dummy data for recipes
 
 ### Practicle 9
 #### Implement App Browser
-* The app will have an input field where the user can enter a URL and a button to initiate the process of opening the URL inside the app
-* Once the user enters a valid URL and clicks the button, a new fragment will slide up from the bottom of the screen, displaying the content of the URL within a web view. 
-* The fragment will also have a button to close it. 
+* The app should use a single Activity to manage the fragments.
+* App should have two fragments - Home & browser fragments
+* On Home fragment add an input field where the user can enter a URL and a button to open url inside app.
+* Once the user enters a valid URL and clicks the button, slide up Browser fragment from the bottom of the screen
+  - This fragment will show the content of the URL within a web view. 
+  - The fragment will also have a button to close it. 
+  - Add a menu in action bar, which will have two option- copy and share the link
+    - Copy option should copy the link to the clipboard
+    - Share option should allow user to share link in other application
 * The state of the fragment should be preserved on configuration changes such as screen rotations.
 
 # Intent
 
 ### Practicle 10
 #### Develop QuickSend application
-* Allow user to send emails by entering the receiver's email address and email content. 
-* The application should have a screen that contains two edit text fields: one for the receiver's email address and one for the email content.
-* The user should enter the email address and content and then click on the send button to send the emai.
+* This will be single Activity app - QuickSendActivity
+* QuickSendActivity allow user to send emails
+  - Add EditTextxs to input the receiver's email address and email content.
+  - Add button to send email
+    - On click of it, app should ask for app to choose to send mail on. 
 
 ### Practicle 11
 #### Develop TalkEasy application
 * Allow users to send and receive messages between two activities. 
-* The first activity should have an edit text and a send button, and when the user enters a message and clicks on the send button, the message should be sent to the second activity.
-* The second activity should have an edit text and a reply button, and when the user enters a reply message and clicks on the reply button, the replied message should be sent back to the first activity and displayed in a text view. 
+* The app will use a two Activity- Sender & Receiver Activity.
+* The Sender activity should have an edit text and a send button
+  - When user enters a message and clicks on the send button, the message should be sent to the Receiver activity.
+* The Receiver activity should have an edit text and a reply button
+  - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender activity and displayed in a text view. 
 
 ### Practicle 12
 #### Create Deep Links to App Content
 * Implement app that handle incoming link
-* On Click of this link https://open.my.app?message={anymessage} system should open our application and show the message from link
-* Use intent-filter to handle deep link
+* The app will use a one Activity- Home Activity
+* On Click of this link https://open.my.app?message={anymessage} from anywhere, system should open Home Activity and show the message from link
+* Use intent-filter in manifest to handle deep link
 
 # Android Jetpack Compose
 
 ### Practicle 13
 #### Develop an interactive onboard screen for Fitness application
 * App will provide a guided introduction to the app's features and functionality
-* The onboard screen should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
-* The onboard screen should provide step-by-step instructions for using these features and include interactive elements such as buttons or sliders that allow the user to interact with the onboard screen 
-* Add option to skip the onboarding process for users who are already familiar with the app's features.
+* The app will use a one Activity- onboard Activity
+* The onboard composable should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
+  - The onboard screen should have interactive elements such as buttons or sliders that allow the user to interact with the onboard screen 
+    - There should be next & previous button to go through features
+    - Add indicator to show pages
+    - Add option to skip the onboarding process.
+* After onboard flow completion navigate user to Home composable
+  - Home composable should show basic tips & tricks related to fitness
+  - Add option to logout, on logout show onboard view.
 * Here's [UI for refrence](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
 ### Practicle 14
 
 #### Develop MathQuest quiz application
-* Ask 10 math questions for elementary school students
-* The home screen should provide a introduction to the quiz and a button to start the quiz. 
+* The app will use a one Activity- quiz Activity
+* The home composable should be entry point of app
+  - Which should provide a introduction to the quiz and a button to start the quiz. 
 * The quiz should ask 10 questions, one at a time, and provide four answer options for each question. 
-* After the user answers all 10 questions, the app should display a result screen that shows the number of correct answers and the total number of questions. 
-* The result screen should also provide a button to restart the quiz so that the user can play again.Implement day/night theme in Quiz app
+  - On click of next button highlight the correct/wrong answer and show next question
+  - Show progress as user answer the questions
+* After the user answers all 10 questions, the app should display a result view
+  - Which shows the number of correct answers and the total number of questions. 
+  - Show the excellence level based on the score such as poor, good and very good. 
+  - Add a button to restart the quiz so that the user can play again.
+* Implement day/night theme in Quiz app
+* You can use images and placeholder to build eye-catchy UI
 * Here's [UI for refrence](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
 
 ### Practicle 15
 #### Implement user profile UI
 * Display a user's profile picture, name, and bio. 
 * Use placeholder for profile image and dummy profile data.
+* Add day/night theme support
 * Here's [UI for refrence](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
 # Networking
