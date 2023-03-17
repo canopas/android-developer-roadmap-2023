@@ -220,6 +220,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Add day/night theme support
 * Here's [UI for refrence](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
+
 # Networking
 
 ### Practicle 16
@@ -258,7 +259,19 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 # App Architecture
 
 ### Practicle 18
+#### Create My Journal application
+* Enable users to document their daily thoughts, feelings, experiences, and ideas. 
+* The app will have a one Activity
+  - Show user's thoughts in Grid
+  - Add TextField to take user input
+  - Add button to save user's thought
+  - Store inputs in Viewmodel as state
+* User should be able to add multiple thoughts
+* The application should be able to persist data even when there is a configuration change, such as a screen rotation.
+* Use MVVM app architecture
 
+
+### Practicle 19
 #### Implement Drink Explorer
 * Allow users to search for their favourite mocktail detail.
 * The app will have a one Activity
@@ -269,17 +282,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
   - Use place holder and dummy data if required
 * Use MVVM app architecture
 
-### Practicle 19
-#### Create My Journal application
-* Enable users to document their daily thoughts, feelings, experiences, and ideas. 
-* The app will have a one Activity
-  - Show all user thoughts in Grid
-  - Add TextField to take user input
-  - Add button to save user's thought
-  - Store inputs in Viewmodel as state
-* User should be able to add multiple thoughts
-* The application should be able to persist data even when there is a configuration change, such as a screen rotation.
-* Use MVVM app architecture
+
 
 # DataStore
 
