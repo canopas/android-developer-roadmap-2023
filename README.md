@@ -4,7 +4,8 @@
 
 
 The Android Developer Roadmap 2023 includes **29 practical exercises** that cover all the essential concepts used in day-to-day development.
-# Guidelines 
+# Guidelines
+
 - Before starting any practical, it's important to conduct research and learn the necessary concepts.
 
 - As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
@@ -14,6 +15,9 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 - To stay organized and track your progress, create tickets on ClickUp for each practical exercise. Each ticket should include a detailed description of the exercise, as well as an estimate of story points.
 
 - As you work on each practical exercise, move the corresponding ticket from the "To-Do" queue to the "Done" queue to keep track of your progress. This will help you stay focused and motivated as you work through the roadmap.
+
+- Follow android [material guideline](https://m2.material.io/design/guidelines-overview) for the best practices of user interface design
+- Follow the [recommendations for Android architecture](https://developer.android.com/topic/architecture/recommendations)
 
 # Table of contents
 * [Android XML](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-xml)
@@ -210,6 +214,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 ### Practicle 15
 #### Implement user profile UI
+* The app will use a one Activity
 * Display a user's profile picture, name, and bio. 
 * Use placeholder for profile image and dummy profile data.
 * Add day/night theme support
@@ -221,20 +226,32 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 #### Develop ImageSaver application
 * Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage. 
-* The user should enter the URL of the image in an edit text field and click on the download button to initiate the download. 
-* The progress of the download should be displayed using a progress bar. 
-* Once the download is complete, the image should be displayed on the screen, and the downloaded image file should be stored in the device's internal storage
+* The app will use a one Activity
+  - Screen will have one Text field to enter URL
+  - Buttons to download image and cancel downloads
+  - Show download progress in progress bar
+  - Show download progress in notification
+  - Show downloaded image on full screen, once download succeed
+  - Add button to save downloaded image in Gallery.
 * Use Retrofit for networking
 
 ### Practicle 17
 
 #### Implement OnlineUserDirectory
-* Retrieve and display a simple users list from web API  
-* Show users on main screen 
+* The app will use a one Activity
+  - Main composable should show list of users retrived from API.
+  - Use LazyColumn to show user
+  - Show summary of user in list including name, image and email
   - GET Api Url : http://jsonplaceholder.typicode.com/users
 * On user item click to display all albums of selected user on next screen. 
+  - Use GridView to show albums
+  - Show placeholder image for album to make UI eyecatchy
   - GET Api Url : https://jsonplaceholder.typicode.com/albums?userId=1
 * On the Album item click show all photos of the selected album on the next screen.
+  - Use GridView to show photos
+  - Show thumb image in Grid
+  - Use glide or coil to show image
+  - On click of items show image in full screen
   - GET Api Url : http://jsonplaceholder.typicode.com/photos?albumId=2
 * Use Retrofit for networking
 
@@ -243,46 +260,77 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 18
 
 #### Implement Drink Explorer
-* Allow users to search for their favourite mocktail detail. The application should have a search bar that allows users to search for mocktails by name. When the user taps on a mocktail, the application should display the ingredients and directions for making the mocktail. 
+* Allow users to search for their favourite mocktail detail.
+* The app will have a one Activity
+  - Add search bar that allows users to search for mocktails by name
   - GET Api Url : https://www.thecocktaildb.com/api/json/v1/1/search.php?i={mocktail}
-* The application should also have a "favourites" section where users can save their favourite mocktails for easy access.
-* Save favourite mocktail detail in the database
+  - Default search text should be `mocktail`. That means initialy show `Mocktail` in search bar and fetch `mocktail` using API
+* When the user taps on a mocktail, the application should display the ingredients and directions for making the mocktail. 
+  - Use place holder and dummy data if required
 * Use MVVM app architecture
 
 ### Practicle 19
 #### Create My Journal application
 * Enable users to document their daily thoughts, feelings, experiences, and ideas. 
-* Add TextField to take user input
+* The app will have a one Activity
+  - Show all user thoughts in Grid
+  - Add TextField to take user input
+  - Add button to save user's thought
+  - Store inputs in Viewmodel as state
+* User should be able to add multiple thoughts
 * The application should be able to persist data even when there is a configuration change, such as a screen rotation.
-* Use ViewModel to save the view state
+* Use MVVM app architecture
 
 # DataStore
 
 ### Practicle 20
 #### Develop Authentify
-* An application that takes user credentials on the login screen and navigates to the home screen after a successful login.
-* Once the user logs in, the app should always show the home screen until the user logs out.
-* Add a button on the home screen to log out and clear the user session.
-* When the user clicks the logout button, the app should clear the user session and navigate back to the login screen.
+* An application that takes user credentials and basic information of user and navigates to the home screen after a successful login.
+* The app will have a one Activity
+  - First app should show register form
+    - Take user's name, email and password for login
+    - Other basic information such as address, DOB, blood group and gender etc.
+    - Add validation for email and password
+    - Save user detail in DataStore
+  - After register, show login form
+    - Take email and password
+    - Check the user is available or not. If user not exist, notify use to do registration
+    - Add validation for email
+* Once the user logs in, the app should always show the home screen
+  - It will show user details
+  - Add logout & delete user option in toolbar
+  - Clear user session on logout
+  - Until the user logs out app should show home screen.
+  - When the user clicks the logout/delete user button, the app should clear/delete the user session and navigate back to the login screen.
 
 # Local Storage
 
 ### Practicle 21
 #### Develop EmployeeHub application
-* The application should display a list of employees on the home screen, including their name and job title. 
-* When a user clicks on an employee from the list, the application should display their full details, such as their contact information, job responsibilities, and other important information. 
+* The app will have a one Activity
+* The application should display a list of employees on the home screen 
+  - Show basic details including their name and job title. 
+* When a user clicks on an employee from the list, the application should display their full details
+  - including their contact information, job title, and other important information. 
 * The user should be able to add new employees to the directory by entering their basic information and saving it locally. 
+  - Save employee name, email, contact info, job title, address, DOB and blood group etc.
 * Additionally, the user should be able to update an employee's information by selecting them from the employee list and editing their details.
-* Finally, the user should be able to delete an employee from the directory by selecting them from the employee list and deleting their details.
+* Finally, employee should be delete by swipe to delete from home screen
 * Use Sqlite to store data locally
+* Use MVVM app architecture
 
 ### Practicle 22
 #### Implement MinionSpeak application
+* The app will have a one Activity
 * Allow users to translate English text to the language of the minions and display the translated text on the screen.
-* The user should enter the English text in an edit text field and click on the translate button to initiate the translation. Once the translation is complete, the translated text should be displayed on the screen in the language of the minions.
-   - GET Request API with query parameter- “text” https://api.funtranslations.com/translate/minion.json?text=”banana”
+* On Home screen
+  - Add text field tpenter the English text.
+  - Add button to translate. On click of button make API call.
+  - Once the translation is complete, the translated text should be displayed on the screen in the language of the minions.
+  - GET Request API with query parameter- “text” https://api.funtranslations.com/translate/minion.json?text=”banana”
 * Additionally, the application should store the translation history locally so that users can access their previous translations.
-* Add an option to delete  history.
+* Add fab button to check history on home screen
+* Add an option to delete  history
 * Use Room database
 
 # Dependency Injection
@@ -290,8 +338,9 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 23
 #### Implement University directory application
 * Allow users to browse and search universities from all around the world.
-* The application should have a dropdown menu that allows users to select a country.
-* When a country is selected, the application should display a list of universities located in that country.
+* The app will have a one Activity
+  - Add dropdown to select the country
+  - When a country is selected, display a list of universities located in that country from API.
 * Use Hilt for dependency injection 
 * GET Request API - http://universities.hipolabs.com/search?country={country name}
 * Write Unit test for viewmodel
@@ -299,8 +348,17 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 24
 #### Implement offline-first StoreMate product application
 * GET API - https://fakestoreapi.com/products
-* Retrieve the list of products from an API and displays it to the user. 
-* The application should also allow the user to view the full details of a product by clicking on it. 
+* The app will have a one Activity
+  - Retrieve the list of products from an API and displays it to the user using LazyGrid. 
+  - Show product name, image and button to favourite/unfavourite product
+* Allow the user to view the product by clicking on it. 
+  - Show all detail of product
+  - Add option to favourite/unfavourite the product
+* Add option on home screen to view favoutie products
+  - Show all favourite products
+  - Add option to remove from favourite
+  - Add option to remove all favourite item
+  - Use can select multiple item on long click and can remove all selected products from favourite.
 * The application should have offline functionality, allowing the user to continue browsing products even when they do not have an internet connection.
 * The product data should be first fetched from the local database and then sync with remote API data.
 * Add swipe-to-delete functionality to remove products from local storage
@@ -311,24 +369,42 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 ### Practicle 25
 #### Implement count-down timer application using Kotlin coroutine. 
+* The app will have a one Activity
+  - Add textfields to take user input for hour, minute and second
+  - Button to start/stop the timer
+  - Show remining & elapsed time 
 * The user should be able to set the duration of the timer and start it. 
-* The timer should decrement every second, and the app should display the remaining time on the screen. 
-* When the timer reaches zero, the app should display a notification to indicate that the time is up.
+* When the timer ends, the app should display a notification to indicate that the time is up.
+* Also play sound and vibrate device on timer completes
 * Write Unit test for viewmodel
 
 ### Practicle 26
 #### Implement a VocabVault app
 * Allow users to search for the definition of any word in the English language.
-* Users should be able to search for a word by typing it into a search bar, and the app should display the word's definition along with pronunciations, parts of speech, examples, synonyms.
+* The app will have a one Activity
+  - Users should be able to search for a word by typing it into a search bar
+  - App should display as user type in search view
+  - The app should display the word's definition along with pronunciations, parts of speech, examples, synonyms.
+  - Add option to play pronounciations of word
+* Make sure app will not make unneccessary API calls while typing in searchview
+  - Use debounce using kotlin coroutine to avoid extra API calls
 * Use Kotlin coroutine
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 * Write Unit test for viewmodel
 
 ### Practicle 27
 #### Create Contact Keeper application.
-* Use Firestore to store contact details.
-* The app should allow users to add, update, and delete contacts.
+* The app will have a one Activity
+  - Add option to add contact with person name, multiple phone numbers, profile image, blood group and address
+  - Show all contancts on home screen
+    - Show name, phone number and profile
+    - On click of contact show contact profile
+  - Add option to update contact detail
+  - Add option to delete user by swipe to delete
+* Add screen to edit/show contact detail
+  - Add option to delete contact
 * The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
+* Use Firestore to store contact details.
 * Use Kotlin  flow to get a real-time update
 * Write Unit test for viewmodel
 
@@ -337,8 +413,11 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 28
 #### Create Stand Up! application 
 * Remind users to stand up and walk around every fifteen minutes.
+* The app will have a one Activity
+  - Add Toggle button to turn alarm on and off
+  - Add option to set reminder start time 
+    - Open Timepicker to select reminder start time
 * The application should display a notification when fifteen minutes have passed since the last reminder.
-* The app should have a toggle button that allows users to turn the alarm on and off.
 * Use the Android AlarmManager to schedule reminder notifications.
 
 # Android Service
@@ -346,9 +425,14 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 29
 #### Create Music player application
 *  Allow users to play multiple songs. 
+* The app will have a one Activity
+  - Show list of songs from device
+  - On click of song, open player from bottom
+  - Show play indicator for current playing song
+* On Player screen
+  - Show song thumb image if available or use placeholder
+  - show song name
+  - Add option to play/pause song
+  - Add options to play next/prevous song
+  - Add options to forward/backword song by 10 sec
 * Use an Android Service to play music in the background and show a notification of the current music being played.
-
-
-
-
- 
