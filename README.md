@@ -1,3 +1,7 @@
+<h1 align="center">Android Developer Roadmap 2023</h1>
+
+![alt text](https://github.com/cp-radhika-s/Android-Roadmap/blob/main/image/og_image.png)
+
 The Android Developer Roadmap 2023 includes **29 practical exercises** that cover all the essential concepts used in day-to-day development.
 # Guidelines
 
