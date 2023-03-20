@@ -1,12 +1,7 @@
-<h1 align="center">Android Developer Roadmap 2023</h1>
-
-![alt text](https://github.com/cp-radhika-s/Android-Roadmap/blob/main/image/og_image.png)
-
-
 The Android Developer Roadmap 2023 includes **29 practical exercises** that cover all the essential concepts used in day-to-day development.
 # Guidelines
 
-- Before starting any practical, it's important to conduct research and learn the necessary concepts.
+- Before starting any practical it's important to conduct research and learn the necessary concepts.
 
 - As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
 
@@ -37,46 +32,49 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 # Android XML
 ### Practicle 1
 
-#### Develop an onboard and sign-in screen for Messaging application
-* App will have 3 Activities - Onboard, signIn and Home activity
-* The onboard screen should provide a brief introduction to the app's features, such as messaging, voice and video calls, and file sharing.
-  - Show images, title and subtitle to introduce app functionality.
-  - Add button to check next/previous features. Also skip button to skip onboarding flow.
-* The sign-in screen should allow the user to enter their email and password, and validation should be added to ensure the user enters a valid email address and password.
+#### Develop UI for a Messaging application
+* Implement an app using 3 Activities - Onboard, signIn and Home Activity
+* On the onboard screen, show brief introduction to the app's features, such as messaging, voice and video calls, and file sharing.
+  - Show images, titles and subtitles to introduce app functionality.
+  - Add a button to check the next/previous features. Also, the skip button to skip the onboarding flow.
+* On the sign-in screen, allow the user to enter their email and password, and add validation to ensure the user enters a valid email address and password.
+  - Use dummy email/password to verify user input.
 * After a successful login, the user should be redirected to the Home screen.
-  - On Home screen should show list of chat which sender detail,latest message and message time.
+  - On the Home screen, show a list of chats with sender name, profile, latest message and message time.
   - The user should not be able to go back to the login screen once redirected to the Home screen.
+  - Use dummy data for chats
+  - Add toggle button on Home screen to change the day/night theme
 * App should responsive for different resolutions.
 * Add support for day/night theme.
-* You can use any images or placeholder to make UI eyecatchy
-* Add should follow material guildlines
+* You can use any images or placeholder to make UI eye-catchy
+* App should follow material guidelines
 * Here's [UI for refrence](https://cdn.dribbble.com/userupload/3719280/file/original-5d6d206acf8adf5458091206369445f1.png?compress=1&resize=752x)
 
 ### Practicle 2
-#### Develop collapsing toolbar for News application
-* App will have one activity
+#### Develop collapsing toolbar for the News application
+* Home screen should show toolbar and news content
 * The toolbar on screen should initially display the app's logo and title.
-* As the user scrolls down to read an article, the toolbar should collapse to provide more space for the article.
+* As the user scrolls down to read news, the toolbar should collapse to provide more space for the content.
   - You can use any dummy text/images as article content.
-* When the user reaches the end of the article and reverse scrolls, the toolbar should re-expand and display the app's logo & title
+* When the user reaches the end of the news and reverses scrolls, the toolbar should re-expand and display the app's logo & title
 * You can use any images or placeholder to make UI eyecatchy
-* Add should follow material guildlines
-* Here's [UI for refrence](https://cdn.dribbble.com/users/663782/screenshots/3742414/media/67464fde751beb373b4c6fa962edf718.gif)
+* App should follow material guidelines
+* Here's [UI for reference](https://cdn.dribbble.com/users/663782/screenshots/3742414/media/67464fde751beb373b4c6fa962edf718.gif)
 
 ### Practicle 3
 #### Implement Survey application
 * App will have one activity
-* On Home screen display survey form
-  - Survey form should show question, 4 options and button for next question.
-  - Show progress as user answer the question
+* On the Home screen display a survey form
+  - Survey form should show questions, 4 options and a button for next question.
+  - Show progress as user answers the question
 * Once the survey is completed, show a pop-up message thanking the user
-  - Use custom dialog to thanks user.
-  - Dialog will have UI to show thanks message, image and button to complete servey
+  - Use the custom dialog to thank the user.
+  - Dialog will have UI to show a thanks message, image and button to complete survey
 * Asks at least 3 questions with 4 options each. 
-* App should ask user about shopping experience. 
-* You can use any images or placeholder to make UI eyecatchy
-* Add should follow material guildlines
-* Here's [UI for refrence](https://cubicleninjas.com/wp-content/uploads/2021/01/NA-2021-Web-Questionnaire-3.jpg)
+* App should ask users about the shopping experience. 
+* You can use any images or placeholder to make UI eye-catchy
+* App should follow material guidelines
+* Here's [UI for reference](https://cubicleninjas.com/wp-content/uploads/2021/01/NA-2021-Web-Questionnaire-3.jpg)
 
 # Android Activity
 
@@ -84,141 +82,144 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 #### Implement Video player 
 * This will be single Activity app
   - App should have a view to show Video
-  - One button to play and pause vide
-* The player should follow the activity lifecycle, pausing when the activity goes to the background and resuming when the activity returns to the foreground. 
-* The player should also release resources when the activity is no longer alive.
+  - One button to play and pause video
+* The player should follow the activity lifecycle, pause the player when the activity goes to the background and resume it when the activity returns to the foreground. 
+* The player should also release resources when the app is no longer alive.
 * An application can play a video from local resource. 
 * Use Exoplayer or MediaPlayer to play media
 
 ### Practicle 5
 #### Implement SnapCam
-* This will be Two Activity app - One to capture picture and another to show preview on image
-  - Which has PreviewView to show camera
+* This will be Two Activity app 
+* Home screen should have PreviewView to show camera
   - It should have button to capture image
-  - Also button to show captured image preview
+  - Button to show captured image preview
+  - Save button on Toolbar to save captured image to the device's gallery.
 * On Preview Screen show image in fullscreen
   - Use Glide or coin for image preview
   - Add button to go back to camera screen
-* Save capture image to the device's gallery.
 * The camera resources should be release when the activity is no longer alive.
+
 
 ### Practicle 6
 #### Implement Note-taking application
-* A single activity app
-  - Which allow user to enter a note 
-  - Use EditText to take input from user.
-  - Add button to reset the note
-* The application should have the ability to maintain the state of the EditText field, even when the device is rotated. 
+* Single activity app
+  - Which allows the user to enter a note 
+  - Use EditText to take input from the user.
+  - Add a button to reset the note.
+* The application should have the ability to maintain the state of the EditText field, even after the device is rotated. 
 * This means that when the user rotates the device, the EditText field should retain its previous contents, and the user should be able to continue editing the note without losing any data.
 
 # Fragment
 
+
 ### Practicle 7
-#### Develop Travel application
-* Implement app using one activity only
-* Home screen should have bottom bar with 3 tabs: Destinations, Search, and Settings. 
+#### Develop a Travel application
+* Implement the app using one activity only
+* Home screen should have a bottom bar with 3 tabs: Destinations, Search, and Settings. 
 * The Destinations tab should display a list of popular travel destinations with images and descriptions. 
-* The Search tab should Aalows the user to search for destinations
+* The Search tab should Allow the user to search for destinations
   - Add search view to search different destination
-  - Show message to notify user when searched destination is not available
+  - Show a message in TextView to notify the user when the searched destination is not available
+  - Use dummy data for destinations
 * The Settings tab should allow the user to customize app settings
-  -  Add toggle button for notification and day/night theme settings.
+  -  Add a toggle button for notification and day/night theme settings.
 * App should preserve the state on tab change
-  - If user scrolled to the bottom in destinations screen, it should preserve scroll state when tab change.
-  - If user searched something on search screen, searched result should be there when navigate to seach tab from other tabs..
-  - If user changed setting's toggle, it should be stay as it is when user navigate between the tabs
-* Use dummy data for destinations
+  - If the user scrolled to the bottom of the destinations screen, it should preserve the scroll state across the tab change.
+  - If a user searches for something on the search screen, the search result should be there when navigating to the search tab from other tabs.
+  - If the user changed the setting's toggle, it should stay as it is when the user navigate between the tabs
 
 ### Practicle 8
 #### Develop RecipeLister application
-* The app should use a single Activity to manage the fragments.
-* App should have two fragments - Home & detail fragments
-* On Home fragment add RecyclerView to display the list of recipes.
+* Single Activity app with two fragments - Home & detail fragment
+* On the Home fragment add RecyclerView to display the list of recipes.
   - Each list item should show the recipe name and a short description.
   - Tapping a recipe should open Detail Fragment.
-* On Detail fragment show full recipe detail with recipe image and description
-  - Add back button to navigate back to the list of recipes.
+* On the Detail fragment show full recipe detail with recipe image and description
+  - Add a back button to navigate back to the list of recipes.
 * Use dummy data for recipes
+
 
 ### Practicle 9
 #### Implement App Browser
-* The app should use a single Activity to manage the fragments.
-* App should have two fragments - Home & browser fragments
-* On Home fragment add an input field where the user can enter a URL and a button to open url inside app.
-* Once the user enters a valid URL and clicks the button, slide up Browser fragment from the bottom of the screen
+* Single Activity app with two fragments - Home & browser fragment
+* On the Home fragment add an input field where the user can enter a URL and a button to open URL inside the app.
+* Once the user enters a valid URL and clicks the button, slide up the Browser fragment from the bottom of the screen
   - This fragment will show the content of the URL within a web view. 
   - The fragment will also have a button to close it. 
-  - Add a menu in action bar, which will have two option- copy and share the link
+  - Add a menu in the action bar, which will have two options- copy and share the link
     - Copy option should copy the link to the clipboard
-    - Share option should allow user to share link in other application
-* The state of the fragment should be preserved on configuration changes such as screen rotations.
+    - The share option should allow users to share links in other applications
+* The state of the fragment should be preserved on configuration changes such as screen rotation.
 
 # Intent
 
 ### Practicle 10
 #### Develop QuickSend application
 * This will be single Activity app - QuickSendActivity
-* QuickSendActivity allow user to send emails
+* QuickSendActivity allows users to send emails
   - Add EditTextxs to input the receiver's email address and email content.
-  - Add button to send email
-    - On click of it, app should ask for app to choose to send mail on. 
+  - Add a button to send email
+    - On click of it, the app should ask for the app to choose to send mail on. 
 
 ### Practicle 11
-#### Develop TalkEasy application
-* Allow users to send and receive messages between two activities. 
-* The app will use a two Activity- Sender & Receiver Activity.
+#### Develop the TalkEasy application
+* The app will send and receive messages between two activities. 
+* The app will use two Activities - Sender & Receiver Activities.
 * The Sender activity should have an edit text and a send button
-  - When user enters a message and clicks on the send button, the message should be sent to the Receiver activity.
+  - When the user enters a message and clicks on the send button, open Receiver activity and show the message recieved from Sender Activity.
 * The Receiver activity should have an edit text and a reply button
   - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender activity and displayed in a text view. 
 
+
 ### Practicle 12
 #### Create Deep Links to App Content
-* Implement app that handle incoming link
-* The app will use a one Activity- Home Activity
-* On Click of this link https://open.my.app?message={anymessage} from anywhere, system should open Home Activity and show the message from link
-* Use intent-filter in manifest to handle deep link
+* Implement an app that handles incoming link
+* The app will use one Activity- Home Activity
+* On Click of this link https://open.my.app?message={anymessage} from anywhere, the system should open Home Activity and show the message from a link
+* Use intent filter in manifest to handle deep link
 
 # Android Jetpack Compose
 
 ### Practicle 13
-#### Develop an interactive onboard screen for Fitness application
+#### Develop an interactive UI for the Fitness application
 * App will provide a guided introduction to the app's features and functionality
-* The app will use a one Activity- onboard Activity
+* The app will use one Activity
 * The onboard composable should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
   - The onboard screen should have interactive elements such as buttons or sliders that allow the user to interact with the onboard screen 
-    - There should be next & previous button to go through features
-    - Add indicator to show pages
-    - Add option to skip the onboarding process.
-* After onboard flow completion navigate user to Home composable
+    - There should be next & previous buttons to go through features
+    - Add an indicator to show pages
+    - Add an option to skip the onboarding process.
+* After onboard flow completion navigate user to the Home composable
   - Home composable should show basic tips & tricks related to fitness
-  - Add option to logout, on logout show onboard view.
-* Here's [UI for refrence](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
+  - Add option to log out, on logout show onboard view.
+* Here's [UI for reference](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
 ### Practicle 14
 
 #### Develop MathQuest quiz application
-* The app will use a one Activity- quiz Activity
-* The home composable should be entry point of app
-  - Which should provide a introduction to the quiz and a button to start the quiz. 
+* The app will have one quiz Activity
+* The home composable should be an entry point of the app
+  - This should provide an introduction to the quiz and a button to start the quiz. 
 * The quiz should ask 10 questions, one at a time, and provide four answer options for each question. 
-  - On click of next button highlight the correct/wrong answer and show next question
-  - Show progress as user answer the questions
-* After the user answers all 10 questions, the app should display a result view
+  - On click of the next button highlight the correct/wrong answer and show the next question
+  - Show progress as the user answers the questions
+* After the user answers all questions, the app should display a result view
   - Which shows the number of correct answers and the total number of questions. 
   - Show the excellence level based on the score such as poor, good and very good. 
   - Add a button to restart the quiz so that the user can play again.
-* Implement day/night theme in Quiz app
-* You can use images and placeholder to build eye-catchy UI
-* Here's [UI for refrence](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
+* Implement  day/night theme in the Quiz app
+* You can use images and placeholders to build eye-catchy UI
+* Here's [UI for reference](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
+
 
 ### Practicle 15
 #### Implement user profile UI
 * The app will use a one Activity
 * Display a user's profile picture, name, and bio. 
-* Use placeholder for profile image and dummy profile data.
+* Use a placeholder for the image and  profile data.
 * Add day/night theme support
-* Here's [UI for refrence](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
+* Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
 
 # Networking
@@ -228,89 +229,92 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 #### Develop ImageSaver application
 * Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage. 
 * The app will use a one Activity
-  - Screen will have one Text field to enter URL
-  - Buttons to download image and cancel downloads
-  - Show download progress in progress bar
-  - Show download progress in notification
-  - Show downloaded image on full screen, once download succeed
-  - Add button to save downloaded image in Gallery.
+  - Screen will have one Text field to enter the URL
+  - Buttons to download images and cancel downloads
+  - Show download progress in the progress bar
+  - Show download progress in the notification
+  - Show the downloaded image on full screen, once the download succeed
+  - Add a button to save downloaded images in Gallery.
 * Use Retrofit for networking
+
 
 ### Practicle 17
 
 #### Implement OnlineUserDirectory
-* The app will use a one Activity
-  - Main composable should show list of users retrived from API.
-  - Use LazyColumn to show user
-  - Show summary of user in list including name, image and email
+* The app will use one Activity
+  - Main composable should show list of users, retrieved from API.
+  - Use LazyColumn to show users
+  - Show summary of user in the list including name, image and email
   - GET Api Url : http://jsonplaceholder.typicode.com/users
-* On user item click to display all albums of selected user on next screen. 
+* On the user item click, display all albums of user on the next screen. 
   - Use GridView to show albums
-  - Show placeholder image for album to make UI eyecatchy
+  - Show placeholder image for an album to make UI eye-catchy
   - GET Api Url : https://jsonplaceholder.typicode.com/albums?userId=1
-* On the Album item click show all photos of the selected album on the next screen.
+* On the Album item click, show all photos of album on the next screen.
   - Use GridView to show photos
   - Show thumb image in Grid
-  - Use glide or coil to show image
+  - Use glide or coil to show the image
   - On click of items show image in full screen
   - GET Api Url : http://jsonplaceholder.typicode.com/photos?albumId=2
 * Use Retrofit for networking
+
+
 
 # App Architecture
 
 ### Practicle 18
 #### Create My Journal application
-* Enable users to document their daily thoughts, feelings, experiences, and ideas. 
+* Enable users to Add their daily thoughts, feelings, experiences, and ideas. 
 * The app will have a one Activity
   - Show user's thoughts in Grid
   - Add TextField to take user input
-  - Add button to save user's thought
-  - Store inputs in Viewmodel as state
+  - Add a button to save the user's thought
+  - Store inputs in ViewModel as state
 * User should be able to add multiple thoughts
-* The application should be able to persist data even when there is a configuration change, such as a screen rotation.
+* The application should be able to persist data even when there is a configuration change, such as screen rotation.
 * Use MVVM app architecture
 
 
 ### Practicle 19
 #### Implement Drink Explorer
 * Allow users to search for their favourite mocktail detail.
-* The app will have a one Activity
-  - Add search bar that allows users to search for mocktails by name
+* The app will have one Activity
+  - Add a search bar that allows users to search for mocktails by name
   - GET Api Url : https://www.thecocktaildb.com/api/json/v1/1/search.php?i={mocktail}
-  - Default search text should be `mocktail`. That means initialy show `Mocktail` in search bar and fetch `mocktail` using API
-* When the user taps on a mocktail, the application should display the ingredients and directions for making the mocktail. 
-  - Use place holder and dummy data if required
+  - Default search text should be `mocktail`. That means initially showing `Mocktail` in the search bar and fetching `mocktail` using API
+* When the user taps on a mocktail, the application should display the ingredients and detail of mocktail. 
+  - Use placeholder and dummy data if required
 * Use MVVM app architecture
-
 
 
 # DataStore
 
 ### Practicle 20
 #### Develop Authentify
-* An application that takes user credentials and basic information of user and navigates to the home screen after a successful login.
-* The app will have a one Activity
-  - First app should show register form
-    - Take user's name, email and password for login
-    - Other basic information such as address, DOB, blood group and gender etc.
+* An application that takes user credentials and basic information of a user and navigates to the home screen after a successful login.
+* The app will have one Activity
+  - First, the app will show the register form
+    - Take the user's name, email and password for login
+    - Other basic information such as an address, DOB, blood group and gender etc.
     - Add validation for email and password
     - Save user detail in DataStore
-  - After register, show login form
+  - After registering, show a login form
     - Take email and password
-    - Check the user is available or not. If user not exist, notify use to do registration
+    - Check whether the user is available or not. If the user does not exist, notify user to do registration
     - Add validation for email
 * Once the user logs in, the app should always show the home screen
   - It will show user details
-  - Add logout & delete user option in toolbar
+  - Add logout & delete user option in the toolbar
   - Clear user session on logout
-  - Until the user logs out app should show home screen.
+  - Until the user logs out app should show the home screen.
   - When the user clicks the logout/delete user button, the app should clear/delete the user session and navigate back to the login screen.
+
 
 # Local Storage
 
 ### Practicle 21
 #### Develop EmployeeHub application
-* The app will have a one Activity
+* Build app using one activity
 * The application should display a list of employees on the home screen 
   - Show basic details including their name and job title. 
 * When a user clicks on an employee from the list, the application should display their full details
@@ -318,22 +322,22 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * The user should be able to add new employees to the directory by entering their basic information and saving it locally. 
   - Save employee name, email, contact info, job title, address, DOB and blood group etc.
 * Additionally, the user should be able to update an employee's information by selecting them from the employee list and editing their details.
-* Finally, employee should be delete by swipe to delete from home screen
-* Use Sqlite to store data locally
+* Finally, an employee should be deleted by swiping to delete from the home screen
+* Use SQLite to store data locally
 * Use MVVM app architecture
 
 ### Practicle 22
 #### Implement MinionSpeak application
-* The app will have a one Activity
 * Allow users to translate English text to the language of the minions and display the translated text on the screen.
-* On Home screen
-  - Add text field tpenter the English text.
-  - Add button to translate. On click of button make API call.
+* Build app using one activity
+* On the Home screen
+  - Add a text field to enter the English text.
+  - Add a button to translate. On click of a button make an API call.
   - Once the translation is complete, the translated text should be displayed on the screen in the language of the minions.
   - GET Request API with query parameter- “text” https://api.funtranslations.com/translate/minion.json?text=”banana”
 * Additionally, the application should store the translation history locally so that users can access their previous translations.
-* Add fab button to check history on home screen
-* Add an option to delete  history
+* Add fab button to check history on the home screen
+* Add an option to delete the history
 * Use Room database
 
 # Dependency Injection
@@ -341,69 +345,76 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 23
 #### Implement University directory application
 * Allow users to browse and search universities from all around the world.
-* The app will have a one Activity
-  - Add dropdown to select the country
+* On Home screen
+  - Add a dropdown to select the country
   - When a country is selected, display a list of universities located in that country from API.
 * Use Hilt for dependency injection 
 * GET Request API - http://universities.hipolabs.com/search?country={country name}
-* Write Unit test for viewmodel
+* Write Unit test for viewModel
+
 
 ### Practicle 24
 #### Implement offline-first StoreMate product application
 * GET API - https://fakestoreapi.com/products
-* The app will have a one Activity
+* Build app using one activity
+* On Home screen
   - Retrieve the list of products from an API and displays it to the user using LazyGrid. 
   - Show product name, image and button to favourite/unfavourite product
 * Allow the user to view the product by clicking on it. 
-  - Show all detail of product
+  - Show all detail of the product
   - Add option to favourite/unfavourite the product
-* Add option on home screen to view favoutie products
+* Add an option on the home screen to view favourite products
   - Show all favourite products
   - Add option to remove from favourite
   - Add option to remove all favourite item
-  - Use can select multiple item on long click and can remove all selected products from favourite.
+  - Use can select multiple items with a long click and can remove all selected products from their favourite.
 * The application should have offline functionality, allowing the user to continue browsing products even when they do not have an internet connection.
 * The product data should be first fetched from the local database and then sync with remote API data.
 * Add swipe-to-delete functionality to remove products from local storage
 * Add swipe-to-refresh functionality to refresh the local database with remote data
-* Write Unit test for viewmodel
+* Write Unit test for viewModel
+
 
 # Kotlin Coroutine & Flow
 
 ### Practicle 25
 #### Implement count-down timer application using Kotlin coroutine. 
-* The app will have a one Activity
-  - Add textfields to take user input for hour, minute and second
+* Build app using one activity
+* On Home screen
+  - Add text fields to take user input for hours, minutes and second
   - Button to start/stop the timer
-  - Show remining & elapsed time 
+  - Show remaining & elapsed time 
 * The user should be able to set the duration of the timer and start it. 
 * When the timer ends, the app should display a notification to indicate that the time is up.
 * Also play sound and vibrate device on timer completes
-* Write Unit test for viewmodel
+* Write Unit test for viewModel
+
 
 ### Practicle 26
 #### Implement a VocabVault app
 * Allow users to search for the definition of any word in the English language.
-* The app will have a one Activity
+* Build an app using one activity
+* On the Home screen
   - Users should be able to search for a word by typing it into a search bar
-  - App should display as user type in search view
-  - The app should display the word's definition along with pronunciations, parts of speech, examples, synonyms.
-  - Add option to play pronounciations of word
-* Make sure app will not make unneccessary API calls while typing in searchview
-  - Use debounce using kotlin coroutine to avoid extra API calls
+  - App should display as user type in the search view
+  - The app should display the word's definition along with pronunciations, parts of speech, examples, and synonyms.
+  - Add option to play pronunciations of word
+* Make sure the app will not make unnecessary API calls while typing in search view
+  - Use debounce using Kotlin coroutine to avoid extra API calls
 * Use Kotlin coroutine
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
-* Write Unit test for viewmodel
+* Write Unit test for viewModel
 
 ### Practicle 27
-#### Create Contact Keeper application.
-* The app will have a one Activity
-  - Add option to add contact with person name, multiple phone numbers, profile image, blood group and address
-  - Show all contancts on home screen
+#### Create a Contact Keeper application.
+* Build an app using one activity
+* On the Home screen
+  - Show all Contacts on the home screen
     - Show name, phone number and profile
-    - On click of contact show contact profile
+    - On click of contact show the contact profile
   - Add option to update contact detail
-  - Add option to delete user by swipe to delete
+  - Add an option to delete a user by swiping to delete
+  - Add option to add contact with person name, multiple phone numbers, profile image, blood group and address
 * Add screen to edit/show contact detail
   - Add option to delete contact
 * The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
@@ -416,26 +427,29 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 ### Practicle 28
 #### Create Stand Up! application 
 * Remind users to stand up and walk around every fifteen minutes.
-* The app will have a one Activity
-  - Add Toggle button to turn alarm on and off
+* Build an app using one activity
+* On the Home screen
+  - Add a Toggle button to turn alarm on and off
   - Add option to set reminder start time 
     - Open Timepicker to select reminder start time
 * The application should display a notification when fifteen minutes have passed since the last reminder.
 * Use the Android AlarmManager to schedule reminder notifications.
 
+
 # Android Service
 
 ### Practicle 29
-#### Create Music player application
+#### Create a Music player application
 *  Allow users to play multiple songs. 
-* The app will have a one Activity
-  - Show list of songs from device
-  - On click of song, open player from bottom
+* Build an app using one activity
+* On the Home screen
+  - Show a list of songs from the device
+  - On click of the song  open player from the bottom
   - Show play indicator for current playing song
-* On Player screen
+* On the Player screen
   - Show song thumb image if available or use placeholder
   - show song name
-  - Add option to play/pause song
-  - Add options to play next/prevous song
-  - Add options to forward/backword song by 10 sec
+  - Add option to play/pause the song
+  - Add options to play the next/previous song
+  - Add options to forward/backwards song by 10 sec
 * Use an Android Service to play music in the background and show a notification of the current music being played.
