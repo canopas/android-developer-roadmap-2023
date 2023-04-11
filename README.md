@@ -34,7 +34,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * [Android Service](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-service)
 
 # Android XML
-### Practicle 1
+### Practical 1
 
 #### Develop UI for a Messaging application
 * Implement an app using 3 Activities - Onboard, signIn and Home Activity
@@ -54,7 +54,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * App should follow material guidelines
 * Here's [UI for refrence](https://cdn.dribbble.com/userupload/3719280/file/original-5d6d206acf8adf5458091206369445f1.png?compress=1&resize=752x)
 
-### Practicle 2
+### Practical 2
 #### Develop collapsing toolbar for the News application
 * Home screen should show toolbar and news content
 * The toolbar on screen should initially display the app's logo and title.
@@ -65,7 +65,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * App should follow material guidelines
 * Here's [UI for reference](https://cdn.dribbble.com/users/663782/screenshots/3742414/media/67464fde751beb373b4c6fa962edf718.gif)
 
-### Practicle 3
+### Practical 3
 #### Implement Survey application
 * App will have one activity
 * On the Home screen display a survey form
@@ -82,7 +82,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Android Activity
 
-### Practicle 4
+### Practical 4
 #### Implement Video player 
 * This will be single Activity app
   - App should have a view to show Video
@@ -92,7 +92,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * An application can play a video from local resource. 
 * Use Exoplayer or MediaPlayer to play media
 
-### Practicle 5
+### Practical 5
 #### Implement SnapCam
 * This will be Two Activity app 
 * Home screen should have PreviewView to show camera
@@ -105,7 +105,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * The camera resources should be release when the activity is no longer alive.
 
 
-### Practicle 6
+### Practical 6
 #### Implement Note-taking application
 * Single activity app
   - Which allows the user to enter a note 
@@ -117,7 +117,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 # Fragment
 
 
-### Practicle 7
+### Practical 7
 #### Develop a Travel application
 * Implement the app using one activity only
 * Home screen should have a bottom bar with 3 tabs: Destinations, Search, and Settings. 
@@ -133,7 +133,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
   - If a user searches for something on the search screen, the search result should be there when navigating to the search tab from other tabs.
   - If the user changed the setting's toggle, it should stay as it is when the user navigate between the tabs
 
-### Practicle 8
+### Practical 8
 #### Develop RecipeLister application
 * Single Activity app with two fragments - Home & detail fragment
 * On the Home fragment add RecyclerView to display the list of recipes.
@@ -144,7 +144,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Use dummy data for recipes
 
 
-### Practicle 9
+### Practical 9
 #### Implement App Browser
 * Single Activity app with two fragments - Home & browser fragment
 * On the Home fragment add an input field where the user can enter a URL and a button to open URL inside the app.
@@ -158,7 +158,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Intent
 
-### Practicle 10
+### Practical 10
 #### Develop QuickSend application
 * This will be single Activity app - QuickSendActivity
 * QuickSendActivity allows users to send emails
@@ -166,7 +166,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
   - Add a button to send email
     - On click of it, the app should ask for the app to choose to send mail on. 
 
-### Practicle 11
+### Practical 11
 #### Develop the TalkEasy application
 * The app will send and receive messages between two activities. 
 * The app will use two Activities - Sender & Receiver Activities.
@@ -176,7 +176,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
   - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender activity and displayed in a text view. 
 
 
-### Practicle 12
+### Practical 12
 #### Create Deep Links to App Content
 * Implement an app that handles incoming link
 * The app will use one Activity- Home Activity
@@ -185,7 +185,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Android Jetpack Compose
 
-### Practicle 13
+### Practical 13
 #### Develop an interactive UI for the Fitness application
 * App will provide a guided introduction to the app's features and functionality
 * The app will use one Activity
@@ -199,8 +199,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
   - Add option to log out, on logout show onboard view.
 * Here's [UI for reference](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
-### Practicle 14
-
+### Practical 14
 #### Develop MathQuest quiz application
 * The app will have one quiz Activity
 * The home composable should be an entry point of the app
@@ -217,7 +216,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Here's [UI for reference](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
 
 
-### Practicle 15
+### Practical 15
 #### Implement user profile UI
 * The app will use a one Activity
 * Display a user's profile picture, name, and bio. 
@@ -225,11 +224,9 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Add day/night theme support
 * Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
-
 # Networking
 
-### Practicle 16
-
+### Practical 16
 #### Develop ImageSaver application
 * Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage. 
 * The app will use a one Activity
@@ -242,8 +239,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Use Retrofit for networking
 
 
-### Practicle 17
-
+### Practical 17
 #### Implement OnlineUserDirectory
 * The app will use one Activity
   - Main composable should show list of users, retrieved from API.
@@ -266,7 +262,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # App Architecture
 
-### Practicle 18
+### Practical 18
 #### Create My Journal application
 * Enable users to Add their daily thoughts, feelings, experiences, and ideas. 
 * The app will have a one Activity
@@ -279,7 +275,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Use MVVM app architecture
 
 
-### Practicle 19
+### Practical 19
 #### Implement Drink Explorer
 * Allow users to search for their favourite mocktail detail.
 * The app will have one Activity
@@ -293,7 +289,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # DataStore
 
-### Practicle 20
+### Practical 20
 #### Develop Authentify
 * An application that takes user credentials and basic information of a user and navigates to the home screen after a successful login.
 * The app will have one Activity
@@ -316,7 +312,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Local Storage
 
-### Practicle 21
+### Practical 21
 #### Develop EmployeeHub application
 * Build app using one activity
 * The application should display a list of employees on the home screen 
@@ -330,7 +326,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Use SQLite to store data locally
 * Use MVVM app architecture
 
-### Practicle 22
+### Practical 22
 #### Implement MinionSpeak application
 * Allow users to translate English text to the language of the minions and display the translated text on the screen.
 * Build app using one activity
@@ -346,7 +342,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Dependency Injection
 
-### Practicle 23
+### Practical 23
 #### Implement University directory application
 * Allow users to browse and search universities from all around the world.
 * On Home screen
@@ -357,7 +353,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Write Unit test for viewModel
 
 
-### Practicle 24
+### Practical 24
 #### Implement offline-first StoreMate product application
 * GET API - https://fakestoreapi.com/products
 * Build app using one activity
@@ -381,7 +377,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Kotlin Coroutine & Flow
 
-### Practicle 25
+### Practical 25
 #### Implement count-down timer application using Kotlin coroutine. 
 * Build app using one activity
 * On Home screen
@@ -394,7 +390,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * Write Unit test for viewModel
 
 
-### Practicle 26
+### Practical 26
 #### Implement a VocabVault app
 * Allow users to search for the definition of any word in the English language.
 * Build an app using one activity
@@ -409,7 +405,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 * Write Unit test for viewModel
 
-### Practicle 27
+### Practical 27
 #### Create a Contact Keeper application.
 * Build an app using one activity
 * On the Home screen
@@ -428,7 +424,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Broadcast receiver & task scheduling
 
-### Practicle 28
+### Practical 28
 #### Create Stand Up! application 
 * Remind users to stand up and walk around every fifteen minutes.
 * Build an app using one activity
@@ -442,7 +438,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 # Android Service
 
-### Practicle 29
+### Practical 29
 #### Create a Music player application
 *  Allow users to play multiple songs. 
 * Build an app using one activity
