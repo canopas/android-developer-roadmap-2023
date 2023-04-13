@@ -19,6 +19,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 - Follow the [recommendations for Android architecture](https://developer.android.com/topic/architecture/recommendations)
 
 # Table of contents
+* [Useful references](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#useful-references)
 * [Android XML](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-xml)
 * [Android Activity](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-activity)
 * [Fragment](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#fragment)
@@ -32,6 +33,20 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * [Kotlin Coroutine & Flow](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#kotlin-coroutine--flow)
 * [Broadcast Receiver](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#broadcast-receiver--task-scheduling)
 * [Android Service](https://github.com/canopas/android-developer-roadmap-2023-/edit/main/README.md#android-service)
+
+## Useful references
+The references provided are aimed at individuals who have no prior knowledge or experience in developing Android apps. They serve as a starting point for beginners in the field, providing basic knowledge that is necessary before diving into Android development. 
+If you already have knowledge and experience in Android development, you may not need to refer to the provided resources. 
+* [Develop your app's layout](https://developer.android.com/develop/ui/views/layout/declaring-layout)
+* [Introduction to activities](https://developer.android.com/guide/components/activities/intro-activities)
+  * [The activity lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle)
+* [Jetpack compose](https://developer.android.com/jetpack/compose/tutorial)
+* App Architecture
+  * [Guide to app architecture](https://developer.android.com/topic/architecture)
+  * [Best practices and recommended Architecture](https://developer.android.com/courses/pathways/android-architecture)
+* Udemy courses - [Android App Development Masterclass](https://www.udemy.com/course/android-oreo-kotlin-app-masterclass/)
+* [Version control Guideline](https://github.com/canopas/android-developer-roadmap-2023/blob/main/GitGuideline.md)
+* [Kotlin style guide](https://developer.android.com/kotlin/style-guide)
 
 # Android XML
 ### Practical 1
