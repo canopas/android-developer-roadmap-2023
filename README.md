@@ -201,6 +201,14 @@ If you already have knowledge and experience in Android development, you may not
 # Android Jetpack Compose
 
 ### Practical 13
+#### Implement user profile UI
+* The app will use a one Activity
+* Display a user's profile picture, name, and bio. 
+* Use a placeholder for the image and  profile data.
+* Add day/night theme support
+* Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
+* 
+### Practical 14
 #### Develop an interactive UI for the Fitness application
 * App will provide a guided introduction to the app's features and functionality
 * The app will use one Activity
@@ -214,7 +222,7 @@ If you already have knowledge and experience in Android development, you may not
   - Add option to log out, on logout show onboard view.
 * Here's [UI for reference](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
-### Practical 14
+### Practical 15
 #### Develop MathQuest quiz application
 * The app will have one quiz Activity
 * The home composable should be an entry point of the app
@@ -229,15 +237,6 @@ If you already have knowledge and experience in Android development, you may not
 * Implement  day/night theme in the Quiz app
 * You can use images and placeholders to build eye-catchy UI
 * Here's [UI for reference](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
-
-
-### Practical 15
-#### Implement user profile UI
-* The app will use a one Activity
-* Display a user's profile picture, name, and bio. 
-* Use a placeholder for the image and  profile data.
-* Add day/night theme support
-* Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
 # Networking
 
