@@ -26,7 +26,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 * [Intent](https://github.com/canopas/android-developer-roadmap-2023#intent)
 * [Jetpack Compose](https://github.com/canopas/android-developer-roadmap-2023#jetpack-compose)
 * [Networking](https://github.com/canopas/android-developer-roadmap-2023#networking)
-* [App Architecture](https://github.com/canopas/android-developer-roadmap#app-architecture)
+* [App Architecture](https://github.com/canopas/android-developer-roadmap-2023#app-architecture)
 * [Datastore](https://github.com/canopas/android-developer-roadmap-2023#datastore)
 * [Database](https://github.com/canopas/android-developer-roadmap-2023#local-storage)
 * [Dependency Injection](https://github.com/canopas/android-developer-roadmap-2023#dependency-injection)
