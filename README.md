@@ -39,7 +39,6 @@ If you already have knowledge and experience in Android development, you may not
   * [Guide to app architecture](https://developer.android.com/topic/architecture)
   * [Best practices and recommended Architecture](https://developer.android.com/courses/pathways/android-architecture)
 * Udemy courses - [Android App Development Masterclass](https://www.udemy.com/course/android-oreo-kotlin-app-masterclass/)
-* [Version control Guideline](https://github.com/canopas/android-developer-roadmap-2023/blob/main/GitGuideline.md)
 * [Kotlin style guide](https://developer.android.com/kotlin/style-guide)
 
 # Android XML
