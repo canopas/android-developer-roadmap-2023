@@ -7,13 +7,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 - Before starting any practical it's important to conduct research and learn the necessary concepts.
 
-- As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises. Try to allocate no more than 3-4 days to each practical.
-
-- To keep track of your progress and share your work with your team lead, create a repository on GitLab where you can upload your completed exercises for review.
-
-- To stay organized and track your progress, create tickets on ClickUp for each practical exercise. Each ticket should include a detailed description of the exercise, as well as an estimate of story points.
-
-- As you work on each practical exercise, move the corresponding ticket from the "To-Do" queue to the "Done" queue to keep track of your progress. This will help you stay focused and motivated as you work through the roadmap.
+- As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises.
 
 - Follow android [material guideline](https://m2.material.io/design/guidelines-overview) for the best practices of user interface design
 - Follow the [recommendations for Android architecture](https://developer.android.com/topic/architecture/recommendations)
