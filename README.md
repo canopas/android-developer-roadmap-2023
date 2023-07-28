@@ -287,9 +287,10 @@ If you already have knowledge and experience in Android development, you may not
 * Allow users to search for their favourite mocktail detail.
 * The app will have one Activity
   - Add a search bar that allows users to search for mocktails by name
-  - GET Api Url : https://www.thecocktaildb.com/api/json/v1/1/search.php?i={mocktail}
-  - Default search text should be `mocktail`. That means initially showing `Mocktail` in the search bar and fetching `mocktail` using API
+  - GET Api Url : https://www.thecocktaildb.com/api/json/v1/1/search.php?s={vodka}
+  - Default search text should be vodka. That means initially showing Vodka in the search bar and fetching vodka using API
 * When the user taps on a mocktail, the application should display the ingredients and detail of mocktail. 
+  - Api for getting ingredients and detail of mocktail: www.thecocktaildb.com/api/json/v1/1/lookup.php?i={itemId}
   - Use placeholder and dummy data if required
 * Use MVVM app architecture
 
