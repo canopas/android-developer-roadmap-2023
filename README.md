@@ -9,7 +9,7 @@ The Android Developer Roadmap 2023 includes **29 practical exercises** that cove
 
 - As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises.
 
-- Follow android [material guideline](https://m2.material.io/design/guidelines-overview) for the best practices of user interface design
+- Follow android [material guideline](https://m3.material.io/get-started) for the best practices of user interface design
 - Follow the [recommendations for Android architecture](https://developer.android.com/topic/architecture/recommendations)
 
 # Table of contents
